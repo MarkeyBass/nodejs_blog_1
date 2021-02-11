@@ -10,7 +10,7 @@ const app = express();
 
 // connect to mongodb
 // const dbURI = 'mongodb+srv://mark_k:19481984@nodemongoproject1.3n1rv.mongodb.net/all-blogs-1?retryWrites=true&w=majority';
-const dbURI = 'mongodb+srv://marks-blog-user:mypassword192837465@cluster0.nfumk.mongodb.net/<dbname>?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://marks-blog-user:mypassword192837465@cluster0.nfumk.mongodb.net/marks-blog?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(PORT, 'localhost'))
